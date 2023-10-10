@@ -24,7 +24,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
-on-run-start: "RESUME COMPUTE FOR COMPUTE PROFILE CP_BUSGRPA_STD_2_XSM IN CG_BUSGRPA_STD;"
+on-run-start: ["SET SESSION COMPUTE GROUP CG_BUSGRPA_STD;","RESUME COMPUTE FOR COMPUTE PROFILE CP_BUSGRPA_STD_2_XSM IN CG_BUSGRPA_STD;"]
 on-run-end: "SUSPEND COMPUTE FOR COMPUTE PROFILE CP_BUSGRPA_STD_2_XSM IN CG_BUSGRPA_STD;"
 
 models:
