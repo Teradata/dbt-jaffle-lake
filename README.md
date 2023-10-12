@@ -1,5 +1,5 @@
 # Jaffle Lake
-`jaffle_lake` is a fork of the original jaffle_lake dbt project to run on a VantageCloud Lake Instance.
+`jaffle_lake` is a fork of the original jaffle_shop dbt demo project modified to run on a VantageCloud Lake Instance.
 
 ## Prerequisites
 - An instance of VantageCloud Lake

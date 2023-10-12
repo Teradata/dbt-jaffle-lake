@@ -1,0 +1,11 @@
+jaffle_lake:
+  target: dev
+  outputs:
+    dev:
+      type: teradata
+      server: <server IP>
+      schema:  jaffle_lake
+      username: <User with access to create tables and views>
+      password: <password>
+      tmode: ANSI
+
