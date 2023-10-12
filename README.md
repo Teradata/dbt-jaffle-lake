@@ -3,11 +3,14 @@
 
 ## Prerequisites
 - An instance of VantageCloud Lake
-- The jaffle_lake database available
+- The jaffle_lake database (it is created through the query in the references folder)
 - A user with access to:
   - Create compute cluster
   - Create table
   - Create view
+
+## Configuration
+- The profile included in the profiles.yml.template, completed with the actual configurations, should be copied to the profiles.yml file on ~/.dbt.
 
 ## dbt models for `jaffle_lake`
 
