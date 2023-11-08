@@ -21,7 +21,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # We tell dbt to send queries to the Standard Compute Group of the lake instance, and to suspend the compute after it finishes.
 # The name is given according to the default naming convention. If the Compute Group or Compute Profile name don't follow the standard naming convention the names should be changed.
 on-run-start: "SET SESSION COMPUTE GROUP CG_BUSGRPA_STD;"
-on-run-end: "SUSPEND COMPUTE FOR COMPUTE PROFILE CP_BUSGRPA_STD_1_XSM IN CG_BUSGRPA_STD;"
+on-run-end: "SUSPEND COMPUTE FOR COMPUTE PROFILE CP_BusGrpA_STD_2_XSM IN CG_BUSGRPA_STD;"
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
